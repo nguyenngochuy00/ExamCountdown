@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Đếm ngược ngày thi tốt nghiệp THPTQG 2022</title>
+    <script src="js/quote.js"></script>
+</head>
+
+<body onload="newQuote();">
+    <img src="images/background1.jpg" id="images">
+    <h1>Đếm ngược ngày thi tốt nghiệp THPT 2022</h1>
+    <p class="article">
+        <i class="material-icons">article</i>
+        <a href="#" id="quotedisplay" onclick="newQuote();"></a>
+    </p>
+    <p class="alarm">
+        <span class="material-icons">alarm</span> Ngày thi: 07/07/2022
+    </p>
+    <p style="font-size:30px;font-weight: bold;"> Thời gian còn lại</p>
+    
+    <div id="countdown" class="countdown">
+        <div class="time">
+            <h2 id="days">--</h2>
+            <small>Ngày</small>
+        </div>
+
+        <div class="time">
+            <h2 id="hours">--</h2>
+            <small>Giờ</small>
+        </div>
+
+        <div class="time">
+            <h2 id="minutes">--</h2>
+            <small>Phút</small>
+        </div>
+
+        <div class="time">
+            <h2 id="seconds">--</h2>
+            <small>Giây</small>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+<script type="text/javascript"> 
+    var totalCount = 5;
+    var num = Math.ceil( Math.random() * totalCount );
+    document.getElementById("images").src = 'images/' + "background"+num+'.jpg';
+</script>
+</html>
